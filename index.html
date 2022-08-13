@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <mgit aeta charset="UTF-8">
+    <mgiteta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marvel x DC</title>
@@ -9,20 +9,20 @@
 <body>
     <script language="Javascript">
         x=prompt("Escolha um universo (Marvel ou DC)");
-        if(x=="DC" || x=="dc"){
+        if(x.toLowerCase()=="dc"){
             heroi=prompt("Digite um herói da DC:");
-            if(heroi=="Batman" || heroi=="batman"){
+            if(heroi.toLowerCase()=="batman"){
                 document.write("<img src='imgs/dc/batman.jpeg'>");
-            }else if(heroi=="Rorschach" || heroi=="rorschach"){
+            }else if(heroi.toLowerCase()=="rorschach"){
                 document.write("<img src='imgs/dc/rorschach.jpeg'>");
             }else{
                 document.write("Herói invalido.");
             }
-        }else if(x=="Marvel" || x=="marvel"){
+        }else if(x.toLowerCase()=="marvel"){
             heroi=prompt("Digite um herói da Marvel:");
-            if(heroi=="Wolverine" || heroi=="wolverine"){
+            if(heroi.toLowerCase()=="wolverine"){
                 document.write("<img src='imgs/marvel/wolverine.jpeg'>");
-            }else if(heroi=="Vampira" || heroi=="vampira"){
+            }else if(heroi.toLowerCase()=="vampira"){
                 document.write("<img src='imgs/marvel/vampira.jpg'>");
             }else{
                 document.write("Herói invalido.");
