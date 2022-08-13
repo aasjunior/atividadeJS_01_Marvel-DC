@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <mgit aeta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel x DC</title>
+</head>
+<body>
+    <script language="Javascript">
+        x=prompt("Escolha um universo (Marvel ou DC)");
+        if(x=="DC" || x=="dc"){
+            heroi=prompt("Digite um herói da DC:");
+            if(heroi=="Batman" || heroi=="batman"){
+                document.write("<img src='imgs/dc/batman.jpeg'>");
+            }else if(heroi=="Rorschach" || heroi=="rorschach"){
+                document.write("<img src='imgs/dc/rorschach.jpeg'>");
+            }else{
+                document.write("Herói invalido.");
+            }
+        }else if(x=="Marvel" || x=="marvel"){
+            heroi=prompt("Digite um herói da Marvel:");
+            if(heroi=="Wolverine" || heroi=="wolverine"){
+                document.write("<img src='imgs/marvel/wolverine.jpeg'>");
+            }else if(heroi=="Vampira" || heroi=="vampira"){
+                document.write("<img src='imgs/marvel/vampira.jpg'>");
+            }else{
+                document.write("Herói invalido.");
+            }
+        }else{
+            document.write("Universo invalido.");
+        }
+    </script>
+</body>
+</html>
