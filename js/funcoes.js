@@ -9,21 +9,25 @@ function selectHeroi(){
     heroi = document.getElementById("heroi").value;
     if(universo=="DC"){
         if(heroi.toLowerCase()=="batman"){
-            document.write("<img src='../imgs/dc/batman.jpeg'>");
+            img_Heroi = "url('../imgs/dc/batman.jpeg')";
         }else if(heroi.toLowerCase()=="rorschach"){
-            document.write("<img src='../imgs/dc/rorschach.jpeg'>");
+            img_Heroi = "url('../imgs/dc/rorschach.jpeg')";
         }else{
             document.write("Herói invalido.");
         }
     }else if(universo=="Marvel"){
         if(heroi.toLowerCase()=="wolverine"){
-            document.write("<img src='../imgs/marvel/wolverine.jpg'>");
+            img_Heroi ="url('../imgs/marvel/wolverine.jpg')";
         }else if(heroi.toLowerCase()=="vampira"){
-            document.write("<img src='../imgs/marvel/vampira.jpg'>");
+            img_Heroi = "url('../imgs/marvel/vampira.jpg')";
         }else{
             document.write("Herói invalido.");
         }
     }else{
         document.write("Universo invalido.");
     }
+
+    document.getElementById("box_heroi").style.display = "none";
+    document.getElementById("img_heroi").style.display = "block";
+    document.getElementById("img_heroi").style.backgroundImage = img_Heroi;
 }
