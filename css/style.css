@@ -1,0 +1,34 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    border: 1px solid;
+}
+
+#wrapper{
+    height: 80%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+    padding: 5px 20px 50px;
+    border: 1px solid;
+}
+
+#box_heroi{
+    display: none;
+}
+
+#img_heroi{
+    display: none;
+    width: 50%;
+    height: 50%;
+}

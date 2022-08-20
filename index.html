@@ -4,32 +4,26 @@
     <mgiteta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script type="text/Javascript" src="js/funcoes.js"></script>
     <title>Marvel x DC</title>
 </head>
 <body>
-    <script language="Javascript">
-        x=prompt("Escolha um universo (Marvel ou DC)");
-        if(x.toLowerCase()=="dc"){
-            heroi=prompt("Digite um herói da DC:");
-            if(heroi.toLowerCase()=="batman"){
-                document.write("<img src='imgs/dc/batman.jpeg'>");
-            }else if(heroi.toLowerCase()=="rorschach"){
-                document.write("<img src='imgs/dc/rorschach.jpeg'>");
-            }else{
-                document.write("Herói invalido.");
-            }
-        }else if(x.toLowerCase()=="marvel"){
-            heroi=prompt("Digite um herói da Marvel:");
-            if(heroi.toLowerCase()=="wolverine"){
-                document.write("<img src='imgs/marvel/wolverine.jpeg'>");
-            }else if(heroi.toLowerCase()=="vampira"){
-                document.write("<img src='imgs/marvel/vampira.jpg'>");
-            }else{
-                document.write("Herói invalido.");
-            }
-        }else{
-            document.write("Universo invalido.");
-        }
-    </script>
+    <div id="wrapper">
+        <div id="box_universo" class="box">
+            <p>Escolha um universo (Marvel ou DC):</p>
+            <input type="radio" name="universo" value="Marvel">Marvel<br>
+            <input type="radio" name="universo" value="DC">DC<br>
+            <button onclick="selectUniverso()">Confirmar</button>
+        </div>
+        <div id="box_heroi" class="box">
+            <p id="universoHeroi"></p>
+            <input type="text" id="heroi" size="20"><br>
+            <button onclick="selectHeroi()">Confirmar</button> 
+        </div>
+        <div id="img_heroi">
+
+        </div>
+    </div>
 </body>
 </html>
