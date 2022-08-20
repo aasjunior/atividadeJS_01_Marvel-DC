@@ -9,9 +9,15 @@ function selectHeroi(){
     heroi = document.getElementById("heroi").value;
     if(universo=="DC"){
         if(heroi.toLowerCase()=="batman"){
-            img_Heroi = "url('../imgs/dc/batman.jpeg')";
+            img_Heroi = "url('../imgs/dc/batman.jpg')";
         }else if(heroi.toLowerCase()=="rorschach"){
-            img_Heroi = "url('../imgs/dc/rorschach.jpeg')";
+            img_Heroi = "url('../imgs/dc/rorschach.jpg')";
+        }else if(heroi.toLowerCase()=="mulher maravilha"){
+            img_Heroi = "url('../imgs/dc/mulher-maravilha.jpg')";
+        }else if(heroi.toLowerCase()=="supergirl"){
+            img_Heroi = "url('../imgs/dc/supergirl.jpg')";
+        }else if(heroi.toLowerCase()=="superman"){
+            img_Heroi = "url('../imgs/dc/superman.jpg')";
         }else{
             document.write("Herói invalido.");
         }
@@ -20,6 +26,12 @@ function selectHeroi(){
             img_Heroi ="url('../imgs/marvel/wolverine.jpg')";
         }else if(heroi.toLowerCase()=="vampira"){
             img_Heroi = "url('../imgs/marvel/vampira.jpg')";
+        }else if(heroi.toLowerCase()=="motoqueiro fantasma"){
+            img_Heroi = "url('../imgs/marvel/motoqueiro-fantasma.jpg')";
+        }else if(heroi.toLowerCase()=="homem de ferro"){
+            img_Heroi = "url('../imgs/marvel/homem-de-ferro.jpg')";
+        }else if(heroi.toLowerCase()=="homem aranha"){
+            img_Heroi = "url('../imgs/marvel/homem-aranha.jpg')";
         }else{
             document.write("Herói invalido.");
         }
