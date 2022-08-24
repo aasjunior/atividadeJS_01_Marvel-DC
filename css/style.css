@@ -6,6 +6,7 @@ body{
     height: 100vh;
     padding: 0;
     margin: 0;
+    font-size: 1.1em;
     color: #eee;
     background-color: #0d1117;
 }
@@ -22,6 +23,7 @@ body{
 .box{
     z-index: 2;
     padding: 5px 20px 50px;
+    border-radius: 10px;
     background-color: #151c27;  
 }
 
@@ -38,3 +40,38 @@ body{
     background-repeat: no-repeat; 
     display: none;
 }
+
+input[type=text]{
+    width: 100%;
+    padding: 5px 5px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #151c27;
+    border-radius: 5px;
+    transition: 0.5s;
+    outline: none;
+}
+input[type=text]:focus {
+    border: 3px solid #15873f;
+}
+
+button{
+    width: 100%;
+    background-color: #15873f;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 12px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color:  #0d5729;
+}
+  
