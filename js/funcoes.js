@@ -19,7 +19,7 @@ function selectHeroi(){
         }else if(heroi.toLowerCase()=="superman"){
             img_Heroi = "url('../imgs/dc/superman.jpg')";
         }else{
-            document.write("Herói invalido.");
+            msgInvalido();
         }
     }else if(universo=="Marvel"){
         if(heroi.toLowerCase()=="wolverine"){
@@ -33,13 +33,17 @@ function selectHeroi(){
         }else if(heroi.toLowerCase()=="homem aranha"){
             img_Heroi = "url('../imgs/marvel/homem-aranha.jpg')";
         }else{
-            document.write("Herói invalido.");
+            msgInvalido();
         }
     }else{
-        document.write("Universo invalido.");
+        document.getElementById("img_heroi").innerHTML = "<hgroup><h1>:(</h1><h3>Universo Inválido.</h3></hgroup>";
     }
 
     document.getElementById("box_heroi").style.display = "none";
-    document.getElementById("img_heroi").style.display = "block";
+    document.getElementById("img_heroi").style.display = "flex";
     document.getElementById("img_heroi").style.backgroundImage = img_Heroi;
+}
+
+function msgInvalido(){
+    document.getElementById("img_heroi").innerHTML = "<hgroup><h1>:(</h1><h3>Herói Inválido.</h3></hgroup>";
 }
