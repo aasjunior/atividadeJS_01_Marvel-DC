@@ -72,3 +72,9 @@ function msgInvalido(){
 function funcVoltar(){
     window.location.reload();
 }
+
+function clonarImagem(){
+    for(var cont=1; cont<=5; cont++){
+        document.write(img_Heroi);
+    }
+}
