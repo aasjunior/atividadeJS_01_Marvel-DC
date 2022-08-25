@@ -33,8 +33,6 @@ body{
 }
 
 #img_heroi{
-    top: 5px;
-    height: auto;
     background-size: contain;
     background-position: center top;
     background-repeat: no-repeat; 
@@ -60,8 +58,14 @@ body{
 }
 
 #img_heroi figure{
+    display: none;
+    height: 70vh;
     margin: 2px;
     width: min-content;
+}
+
+#img_heroi figure img{
+    height: inherit;
 }
 
 input[type=text]{
