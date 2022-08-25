@@ -19,6 +19,7 @@ function selectHeroi(){
         }else if(heroi.toLowerCase()=="superman"){
             img_Heroi = "<img src='imgs/dc/superman.jpg'>";
         }else{
+            msg_invalido = "Herói inválido.";
             msgInvalido();
         }
     }else if(universo=="Marvel"){
@@ -33,10 +34,12 @@ function selectHeroi(){
         }else if(heroi.toLowerCase()=="homem aranha"){
             img_Heroi = "<img src='imgs/marvel/homem-aranha.jpg'>";
         }else{
+            msg_invalido = "Herói inválido.";
             msgInvalido();
         }
     }else{
-        document.getElementById("img_heroi").innerHTML = "<hgroup><h1>:(</h1><h3>Universo Inválido.</h3></hgroup>";
+        msg_invalido = "Universo inválido.";
+            msgInvalido();
     }
 
     document.getElementById("box_heroi").style.display = "none";
@@ -45,7 +48,8 @@ function selectHeroi(){
 }
 
 function msgInvalido(){
-    document.getElementById("img_heroi").innerHTML = "<hgroup><h1>:(</h1><h3>Herói Inválido.</h3></hgroup>";
+    document.getElementById("msg_invalido").style.display = "block";
+    document.getElementById("msg_invalido").innerHTML = "<h1>:(</h1><h3>" + msg_invalido + "</h3>";
 }
 
 function funcVoltar(){
