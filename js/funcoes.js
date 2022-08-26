@@ -60,6 +60,8 @@ function mostrarHeroi(){
     document.getElementById("img_heroi").style.display = "flex";
     document.getElementById("fig_heroi").style.display = "block";
     document.getElementById("fig_heroi").innerHTML = img_Heroi;
+    document.getElementById("img_heroi").innerHTML += "<button onclick='clonarImagem()'>Mostrar 5x</button>";
+    document.getElementById("img_heroi").innerHTML += "<button onclick='funcVoltar()'>Voltar</button>";
 }
 
 function msgInvalido(){
@@ -67,6 +69,7 @@ function msgInvalido(){
     document.getElementById("img_heroi").style.display = "flex";
     document.getElementById("msg_invalido").style.display = "block";
     document.getElementById("msg_invalido").innerHTML = "<h1>:(</h1><h3>" + msg_invalido + "</h3>";
+    document.getElementById("img_heroi").innerHTML += "<button onclick='funcVoltar()'>Voltar</button>";
 }
 
 function funcVoltar(){
@@ -74,7 +77,11 @@ function funcVoltar(){
 }
 
 function clonarImagem(){
+    document.getElementById("box_heroi").style.display = "none";
+    document.getElementById("img_heroi").style.display = "none";
+    document.getElementById("fig_heroi").style.display = "none";
+    document.getElementById("mostrar5").style.display = "flex";
     for(var cont=1; cont<=5; cont++){
-        document.write(img_Heroi);
+        document.getElementById("mostrar5").innerHTML += img_Heroi;
     }
 }
