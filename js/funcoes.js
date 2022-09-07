@@ -33,7 +33,7 @@ function mostrarHeroi(){
         document.getElementById("box_heroi").style.display = "none";
         document.getElementById("img_heroi").style.display = "flex";
         document.getElementById("fig_heroi").style.display = "block";
-        document.getElementById("fig_heroi").innerHTML = "<img src='imgs/" + universo + "/" + img_Heroi + "'>";
+        document.getElementById("fig_heroi").innerHTML = "<img src='imgs/" + universo.toLowerCase() + "/" + img_Heroi + "'>";
         document.getElementById("img_heroi").innerHTML += "<button onclick='funcVoltar()' class='btn'>Voltar</button>";
     }
 }
