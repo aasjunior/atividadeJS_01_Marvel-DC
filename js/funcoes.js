@@ -1,5 +1,11 @@
+xmlHTTP = new XMLHttpRequest();//Instanciação do objeto
+xmlHTTP.open("GET", "xml/db_conteudo.xml", false);
+xmlHTTP.send();
+xmlDoc = xmlHTTP.responseXML;//Informa que o tipo de arquivo é XML 
+
 function selectUniverso(){
     universo = document.querySelector("input[name=universo]:checked").value;
+
     document.getElementById("universo_heroi").innerHTML = "Digite um herói do universo " + universo;
     document.getElementById("box_universo").style.display = "none";
     document.getElementById("box_heroi").style.display = "block";
@@ -7,62 +13,27 @@ function selectUniverso(){
 
 function selectHeroi(){
     heroi = document.getElementById("heroi").value;
-    if(universo=="DC"){
-        switch(heroi.toLowerCase()){
-            case "batman":
-                img_Heroi = "<img src='imgs/dc/batman.jpg'>";
-                break;
-            case "rorschach":
-                img_Heroi = "<img src='imgs/dc/rorschach.jpg'>";
-                break;
-            case "mulher maravilha": case "mulher-maravilha":
-                img_Heroi = "<img src='imgs/dc/mulher-maravilha.jpg'>";
-                break;
-            case "supergirl":
-                img_Heroi = "<img src='imgs/dc/supergirl.jpg'>";
-                break;
-            case "superman":
-                img_Heroi = "<img src='imgs/dc/superman.jpg'>";
-                break;
-            default:
-                img_Heroi = "Herói inválido.";
-                break;
+    let x = xmlDoc.getElementsByTagName(universo.toLowerCase());
+    n = x.length-1;
+
+    for(var i=n; i>=0; i--){
+        if(heroi.toLowerCase()==x[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue.toLowerCase()){
+            img_Heroi = x[i].getElementsByTagName("imagem")[0].childNodes[0].nodeValue;
+        }else{
+            img_Heroi = "Herói inválido.";
         }
-    }else if(universo=="Marvel"){
-        switch(heroi.toLowerCase()){
-            case "wolverine":
-                img_Heroi ="<img src='imgs/marvel/wolverine.jpg'>";
-                break;
-            case "vampira":
-                img_Heroi = "<img src='imgs/marvel/vampira.jpg'>";
-                break;
-            case "motoqueiro fantasma": case "motoqueiro-fantasma":
-                img_Heroi = "<img src='imgs/marvel/motoqueiro-fantasma.jpg'>";
-                break;
-            case "homem de ferro":
-                img_Heroi = "<img src='imgs/marvel/homem-de-ferro.jpg'>";
-                break;
-            case "homem aranha": case "homem-aranha":
-                img_Heroi = "<img src='imgs/marvel/homem-aranha.jpg'>";
-                break;
-            default:
-                img_Heroi = "Herói inválido.";
-                break;
-        }
-    }else{
-        img_Heroi = "Universo inválido.";
     }
     mostrarHeroi();
 }
 
 function mostrarHeroi(){
-    if(img_Heroi=="Herói inválido." || img_Heroi=="Universo inválido."){
+    if(img_Heroi=="Herói inválido."){
         msgInvalido();
     }else{
         document.getElementById("box_heroi").style.display = "none";
         document.getElementById("img_heroi").style.display = "flex";
         document.getElementById("fig_heroi").style.display = "block";
-        document.getElementById("fig_heroi").innerHTML = img_Heroi;
+        document.getElementById("fig_heroi").innerHTML = "<img src='imgs/" + universo + "/" + img_Heroi + "'>";
         document.getElementById("img_heroi").innerHTML += "<button onclick='funcVoltar()' class='btn'>Voltar</button>";
     }
 }
