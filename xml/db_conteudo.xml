@@ -1,67 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <conteudo>
-    <dc>
-        <heroi>
-            <codigo>1</codigo>
-            <nome>Batman</nome>
-            <corpo></corpo>
-            <imagem fileName="batman.jpg">batman.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>2</codigo>
-            <nome>Mulher-Maravilha</nome>
-            <corpo></corpo>
-            <imagem fileName="mulher-maravilha.jpg">mulher-maravilha.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>3</codigo>
-            <nome>Rorschach</nome>
-            <corpo></corpo>
-            <imagem fileName="rorschach.jpg">rorschach.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>4</codigo>
-            <nome>Supergirl</nome>
-            <corpo></corpo>
-            <imagem fileName="supergirl.jpg">supergirl.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>5</codigo>
-            <nome>Superman</nome>
-            <corpo></corpo>
-            <imagem fileName="superman.jpg">superman.jpg</imagem>
-        </heroi>
-    </dc>
-    <marvel>
-        <heroi>
-            <codigo>1</codigo>
-            <nome>Homem-Aranha</nome>
-            <corpo></corpo>
-            <imagem fileName="homem-aranha.jpg">homem-aranha.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>2</codigo>
-            <nome>Homem de Ferro</nome>
-            <corpo></corpo>
-            <imagem fileName="homem-de-ferro.jpg">homem-de-ferro.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>3</codigo>
-            <nome>Motoqueiro Fantasma</nome>
-            <corpo></corpo>
-            <imagem fileName="motoqueiro-fantasma.jpg">motoqueiro-fantasma.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>4</codigo>
-            <nome>Vampira</nome>
-            <corpo></corpo>
-            <imagem fileName="vampira.jpg">vampira.jpg</imagem>
-        </heroi>
-        <heroi>
-            <codigo>5</codigo>
-            <nome>Wolverine</nome>
-            <corpo></corpo>
-            <imagem fileName="wolverine.jpg">wolverine.jpg</imagem>
-        </heroi>
-    </marvel>
+    <heroi>
+        <universo>DC</universo>
+        <nome>Batman</nome>
+        <corpo></corpo>
+        <imagem fileName="batman.jpg">batman.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>DC</universo>
+        <nome>Mulher-Maravilha</nome>
+        <corpo></corpo>
+        <imagem fileName="mulher-maravilha.jpg">mulher-maravilha.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>DC</universo>
+        <nome>Rorschach</nome>
+        <corpo></corpo>
+        <imagem fileName="rorschach.jpg">rorschach.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>DC</universo>
+        <nome>Supergirl</nome>
+        <corpo></corpo>
+        <imagem fileName="supergirl.jpg">supergirl.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>DC</universo>
+        <nome>Superman</nome>
+        <corpo></corpo>
+        <imagem fileName="superman.jpg">superman.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>Marvel</universo>
+        <nome>Homem-Aranha</nome>
+        <corpo></corpo>
+        <imagem fileName="homem-aranha.jpg">homem-aranha.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>Marvel</universo>
+        <nome>Homem de Ferro</nome>
+        <corpo></corpo>
+        <imagem fileName="homem-de-ferro.jpg">homem-de-ferro.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>Marvel</universo>
+        <nome>Motoqueiro Fantasma</nome>
+        <corpo></corpo>
+        <imagem fileName="motoqueiro-fantasma.jpg">motoqueiro-fantasma.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>Marvel</universo>
+        <nome>Vampira</nome>
+        <corpo></corpo>
+        <imagem fileName="vampira.jpg">vampira.jpg</imagem>
+    </heroi>
+    <heroi>
+        <universo>Marvel</universo>
+        <nome>Wolverine</nome>
+        <corpo></corpo>
+        <imagem fileName="wolverine.jpg">wolverine.jpg</imagem>
+    </heroi>
 </conteudo>

@@ -5,7 +5,6 @@ xmlDoc = xmlHTTP.responseXML;//Informa que o tipo de arquivo é XML
 
 function selectUniverso(){
     universo = document.querySelector("input[name=universo]:checked").value;
-
     document.getElementById("universo_heroi").innerHTML = "Digite um herói do universo " + universo;
     document.getElementById("box_universo").style.display = "none";
     document.getElementById("box_heroi").style.display = "block";
@@ -13,16 +12,19 @@ function selectUniverso(){
 
 function selectHeroi(){
     heroi = document.getElementById("heroi").value;
-    let x = xmlDoc.getElementsByTagName(universo.toLowerCase());
+    let x = xmlDoc.getElementsByTagName("heroi");
     n = x.length-1;
-
-    for(var i=n; i>=0; i--){
-        if(heroi.toLowerCase()==x[i].getElementsByTagName("nome")[0].childNodes[0].nodeValue.toLowerCase()){
-            img_Heroi = x[i].getElementsByTagName("imagem")[0].childNodes[0].nodeValue;
+    console.log(n);
+    do{
+        if(heroi.toLowerCase()==x[n].getElementsByTagName("nome")[0].childNodes[0].nodeValue.toLowerCase()){
+            console.log(x[n].getElementsByTagName("nome")[0].childNodes[0].nodeValue.toLowerCase());
+            img_Heroi = x[n].getElementsByTagName("imagem")[0].childNodes[0].nodeValue;
+            n=-1;
         }else{
             img_Heroi = "Herói inválido.";
+            n--;
         }
-    }
+    }while(n>=0);
     mostrarHeroi();
 }
 
