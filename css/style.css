@@ -19,7 +19,7 @@ body{
     color: var(--font-color);
     background-color: var(--bg);
 }
-main{
+.wrap{
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -40,7 +40,7 @@ h3{
     margin-top: 5px;
     margin-bottom: 10px;
 }
-figure{
+.fig{
     height: 70vh;
     margin: 1px;
     width: min-content;
@@ -48,11 +48,10 @@ figure{
 img{
     height: inherit;
 }
-#box_heroi{
+.disabled{
     display: none;
 }
 #img_heroi{
-    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
