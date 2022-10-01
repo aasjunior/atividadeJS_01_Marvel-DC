@@ -1,63 +1,58 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <conteudo>
-    <heroi>
-        <universo>DC</universo>
+    <heroi universo='dc'>
         <nome>Batman</nome>
         <corpo></corpo>
-        <imagem fileName="batman.jpg">batman.jpg</imagem>
+        <imagem>batman.jpg</imagem>
     </heroi>
-    <heroi>
-        <universo>DC</universo>
+    <heroi universo='dc'>
         <nome>Mulher-Maravilha</nome>
         <corpo></corpo>
-        <imagem fileName="mulher-maravilha.jpg">mulher-maravilha.jpg</imagem>
+        <imagem>mulher-maravilha.jpg</imagem>
     </heroi>
-    <heroi>
-        <universo>DC</universo>
+    <heroi universo='dc'>
         <nome>Rorschach</nome>
         <corpo></corpo>
-        <imagem fileName="rorschach.jpg">rorschach.jpg</imagem>
+        <imagem>rorschach.jpg</imagem>
     </heroi>
-    <heroi>
-        <universo>DC</universo>
+    <heroi universo='dc'>
         <nome>Supergirl</nome>
         <corpo></corpo>
-        <imagem fileName="supergirl.jpg">supergirl.jpg</imagem>
+        <imagem>supergirl.jpg</imagem>
     </heroi>
-    <heroi>
-        <universo>DC</universo>
+    <heroi universo='dc'>
         <nome>Superman</nome>
         <corpo></corpo>
-        <imagem fileName="superman.jpg">superman.jpg</imagem>
+        <imagem>superman.jpg</imagem>
     </heroi>
-    <heroi>
+    <heroi universo='marvel'>
         <universo>Marvel</universo>
         <nome>Homem-Aranha</nome>
         <corpo></corpo>
-        <imagem fileName="homem-aranha.jpg">homem-aranha.jpg</imagem>
+        <imagem>homem-aranha.jpg</imagem>
     </heroi>
-    <heroi>
+    <heroi universo='marvel'>
         <universo>Marvel</universo>
         <nome>Homem de Ferro</nome>
         <corpo></corpo>
-        <imagem fileName="homem-de-ferro.jpg">homem-de-ferro.jpg</imagem>
+        <imagem>homem-de-ferro.jpg</imagem>
     </heroi>
-    <heroi>
+    <heroi universo='marvel'>
         <universo>Marvel</universo>
         <nome>Motoqueiro Fantasma</nome>
         <corpo></corpo>
-        <imagem fileName="motoqueiro-fantasma.jpg">motoqueiro-fantasma.jpg</imagem>
+        <imagem>motoqueiro-fantasma.jpg</imagem>
     </heroi>
-    <heroi>
+    <heroi universo='marvel'>
         <universo>Marvel</universo>
         <nome>Vampira</nome>
         <corpo></corpo>
-        <imagem fileName="vampira.jpg">vampira.jpg</imagem>
+        <imagem>vampira.jpg</imagem>
     </heroi>
-    <heroi>
+    <heroi universo='marvel'>
         <universo>Marvel</universo>
         <nome>Wolverine</nome>
         <corpo></corpo>
-        <imagem fileName="wolverine.jpg">wolverine.jpg</imagem>
+        <imagem>wolverine.jpg</imagem>
     </heroi>
 </conteudo>
